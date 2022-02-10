@@ -43,7 +43,6 @@ public class ItemServiceImpl implements ItemService {
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             item = (Item) objectInputStream.readObject();
             objectInputStream.close();
-            System.out.println(item);
             itemRepository.save(item);
         } catch (IOException | ClassNotFoundException e) {
             System.out.println(e);
