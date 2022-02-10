@@ -8,7 +8,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Map;
 
@@ -23,7 +22,7 @@ public class Item implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    private String id;
+    private String _id;
     private String name;
     private Map<String, String> props;
 }

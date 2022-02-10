@@ -9,7 +9,8 @@
 </head>
 <body>
 <#list items as item>
-    <h4>${item.id}: ${item.name}</h4>
+    <h4>${item._id}: ${item.name}</h4>
+    <h5>${item.props}</h5>
 </#list>
 </body>
 </html>

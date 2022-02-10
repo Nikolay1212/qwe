@@ -14,7 +14,6 @@ public class UserController {
 
     @GetMapping("/items")
     public String getItemPage(Model model) {
-        System.out.println("User Controller");
         model.addAttribute("items", itemService.getAllItem());
         return "items";
     }
