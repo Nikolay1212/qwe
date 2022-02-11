@@ -1,5 +1,6 @@
 package com.digit.goodsaccounting.service;
 
+import com.digit.goodsaccounting.dto.ItemDto;
 import com.digit.goodsaccounting.model.Item;
 import com.digit.goodsaccounting.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ public class ItemServiceImpl implements ItemService {
     private ItemRepository itemRepository;
 
     @Override
-    public List<Item> getAllItem() {
-        return itemRepository.findAll();
+    public List<ItemDto> getAllItem() {
+        return ItemDto.from(itemRepository.findAll());
     }
 
     @Override

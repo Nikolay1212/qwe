@@ -21,7 +21,7 @@
         <#list items as item>
             <#list item.getProps()?keys as key>
                 <tr>
-                    <td>${item._id}</td>
+                    <td>${item.id}</td>
                     <td>${item.name}</td>
                     <td>${key} = ${item.getProps()[key]}</td>
                 </tr>

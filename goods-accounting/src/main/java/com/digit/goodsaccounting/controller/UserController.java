@@ -15,6 +15,6 @@ public class UserController {
     @GetMapping("/items")
     public String getItemPage(Model model) {
         model.addAttribute("items", itemService.getAllItem());
-        return "items";
+        return "items_user";
     }
 }

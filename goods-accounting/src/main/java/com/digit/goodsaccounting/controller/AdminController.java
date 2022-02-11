@@ -18,12 +18,7 @@ public class AdminController {
     @GetMapping("/admin/items")
     public String getAllItems(Model model) {
         model.addAttribute("items", itemService.getAllItem());
-        return "items";
-    }
-
-    @GetMapping("/admin/item/add")
-    public String getFileUploadPage() {
-        return "item_upload";
+        return "items_admin";
     }
 
     @PostMapping("/admin/item/add")

@@ -22,7 +22,7 @@ public class Item implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    private String _id;
+    private String id;
     private String name;
     private Map<String, String> props;
 }

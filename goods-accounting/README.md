@@ -10,6 +10,7 @@ Technologies Used:
 How to run this application
 
     1. Change the src/main/resources/application.properties with your MongoDB instance properties.
+        It looks like: mongodb+srv://<mongo-db-user>:<mongo-db-password>@<your-cluster>/mongo-db-name
     2. Package JAR using follow command:
             $ mvn clean package spring-boot:repackage
     3. Start the JAR file using java:
